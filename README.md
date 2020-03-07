@@ -3,8 +3,8 @@
 </p>
 
 # TB3DS_Termux
-GAWK and Bourne Shell Scripts for Converting PDF(Public notice that teacher's license has expired included in Japanese Government Gazette) to Text File. 
-Download
+GAWK and Bourne Shell Scripts for Converting PDF(Public notice that teacher's license has expired included in Japanese Government Gazette) to Text File.   
+Download  
 https://github.com/GinSanaduki/TB3DS_Termux/releases/download/V1.0.0/TB3DS_Termux.7z  
 
 # Introduction
