@@ -50,6 +50,7 @@ pkg install tesseract
 cd ~/storage/downloads/TB3DS_Termux
 pkg install p7zip
 wget https://github.com/GinSanaduki/TB3DS_Termux/releases/download/V1.0.0/TB3DS_Termux.7z
+7z x TB3DS_Termux.7z
 
 ```
 
