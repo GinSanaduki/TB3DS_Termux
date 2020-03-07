@@ -56,7 +56,7 @@ Androidの場合、CPUが4GBと他のPCに比べて小さい場合、6倍程度�
 暇な時に流しておくのが、いいんじゃないかと思いますよ。
 
 # その他の解説
-* Windows版
+* Windows版  
 http://github.com/GinSanaduki/TB3DS  
 
 # TB3DSに対するバグレポートは随時受け付けますが、それ以外の苦情は基本的に受け付けませんのであしからず。
