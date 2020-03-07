@@ -52,8 +52,9 @@ sh ShellScripts/01_CALL_UPDATE.sh
 Androidの場合、CPUが4GBと他のPCに比べて小さい場合、6倍程度時間がかかると思ってください。  
 まして、音楽とか聴きながらだと、他にCPUを使っているので、それだけ変換に時間がかかります。  
 だいたい、8GBのWindowsのCPUで、3MBのPNGファイルをTesseractで変換するのに1分程度かかります。  
+動作試験をしたのは、Lenovo Thinkpadと富士通 FMV LAPTOP-T50E9V47です。  
 手持ちのKYOCERA TORQUE G4(Android9, 物理CPU2つ, 4GB)で、3MBのPNGファイルを変換したら、5分40秒程度かかりました。  
-暇な時に流しておくのが、いいんじゃないかと思いますよ。  
+暇な時に流しておくのが、いいんじゃあないかと思いますよ。  
 
 # その他の解説
 * Windows版  
