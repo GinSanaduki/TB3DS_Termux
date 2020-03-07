@@ -4,6 +4,8 @@
 
 # TB3DS_Termux
 GAWK and Bourne Shell Scripts for Converting PDF(Public notice that teacher's license has expired included in Japanese Government Gazette) to Text File. 
+Download
+https://github.com/GinSanaduki/TB3DS_Termux/releases/download/V1.0.0/TB3DS_Termux.7z  
 
 # Introduction
 Copyright 2020 The TB3DS_Termux Project Authors, GinSanaduki.
@@ -47,7 +49,8 @@ pkg install tesseract
 ```
 cd ~/storage/downloads/TB3DS_Termux
 pkg install p7zip
-wget 
+wget https://github.com/GinSanaduki/TB3DS_Termux/releases/download/V1.0.0/TB3DS_Termux.7z
+
 ```
 
 ダウンロードの配下にTB3DS_Termuxを配置した場合、以下のように実行してください。  
