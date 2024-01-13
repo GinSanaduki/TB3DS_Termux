@@ -76,17 +76,15 @@ RetCode=$?
 test $RetCode -ne 0 && exit 99;
 
 # -------------------------------------------------------------------------------------------------------------------------------
-
+# 2024/01/13 官報トップページのレイアウト変更に伴う変更
 sed -e 's/\r//g' $EDITFILE_ORIGIN | 
 gawk '/<div id="todayBox" class="todayBox">/,/<\/div><!-- \/toggleBox -->/{gsub("\t","");print;}' | \
-fgrep -e '<dt>' -e '<li>' | \
+sed -e 's/<br>/\n/g' | \
+grep -F -e '<dt>' -e '<li class=' | \
+sed -e 's/<li class="articleBox"><a href=".//g' | \
+sed -e 's/" class="articleTop">/\t/g' | \
 sed -e 's/<\/dt>//g' | \
-sed -e 's/<\/a>//g' | \
-sed -e 's/<\/li>//g' | \
-sed -e 's/<br>//g' | \
-sed -e 's/">/\t/g' | \
-sed -e 's/<li><a href=".//g' | \
-gawk '{gsub(" ","");print;}' | \
+sed -e 's/令和 /令和/g' | \
 gawk 'BEGIN{Wareki = "";} /^<dt>/{Wareki = $0; gsub("<dt>","",Wareki);next;}{print Wareki"\t"$0;}' | \
 gawk 'BEGIN{FS = "\t"; URL = "https://kanpou.npb.go.jp";}{print $1"\t"URL$2"\t"$3}' > $EXTRACTLIST
 
@@ -101,6 +99,7 @@ xargs -P $Parallel -a $EXEC_SHELL -r -I{} sh -c '{}'
 # 当該HTMLファイルが存在しない、または空ファイルである場合、取得し10秒のインターバルを空ける
 : > $EXEC_SHELL
 gawk -f AWKScripts/01_UPDATE/03_SubSystem/01_SubSystem_01.awk -v HTTP_Command=$HTTP_Command $DEUXLIST > $EXEC_SHELL
+echo $EXEC_SHELL
 RetCode=$?
 test $RetCode -ne 0 && exit 99;
 sh $EXEC_SHELL
