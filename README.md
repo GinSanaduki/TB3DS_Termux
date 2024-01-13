@@ -2,6 +2,9 @@
     <a href="https://opensource.org/licenses/BSD-3-Clause"><img src="https://img.shields.io/badge/license-bsd-orange.svg" alt="Licenses"></a>
 </p>
 
+# INFORMATION 
+2024/01/13 2024年1月の官報トップページのHTML構成変更に伴い、2023年までのバージョンでは取得できなくなっています。ShellScript/01_CALL_UPDATE.shの差し替えをするか、再度TB3DS_Termux.7zのダウンロードをお願いします。
+
 # TB3DS_Termux
 GAWK and Bourne Shell Scripts for Converting PDF(Public notice that teacher's license has expired included in Japanese Government Gazette) to Text File.   
 Download  
