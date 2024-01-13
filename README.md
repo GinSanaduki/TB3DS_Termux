@@ -3,12 +3,13 @@
 </p>
 
 # INFORMATION 
-2024/01/13 2024年1月の官報トップページのHTML構成変更に伴い、2023年までのバージョンでは取得できなくなっています。ShellScript/01_CALL_UPDATE.shの差し替えをするか、再度TB3DS_Termux.7zのダウンロードをお願いします。
+2024/01/13 2024年1月の官報トップページのHTML構成変更に伴い、2023年までのバージョンでは取得できなくなっています。  
+ShellScript/01_CALL_UPDATE.shの差し替えをするか、再度TB3DS_Termux.7zのダウンロードをお願いします（V1.0.1です）。  
 
 # TB3DS_Termux
 GAWK and Bourne Shell Scripts for Converting PDF(Public notice that teacher's license has expired included in Japanese Government Gazette) to Text File.   
 Download  
-https://github.com/GinSanaduki/TB3DS_Termux/releases/download/V1.0.0/TB3DS_Termux.7z  
+https://github.com/GinSanaduki/TB3DS_Termux/releases/download/V1.0.1/TB3DS_Termux.7z  
 
 # Introduction
 Copyright 2020 The TB3DS_Termux Project Authors, GinSanaduki.
