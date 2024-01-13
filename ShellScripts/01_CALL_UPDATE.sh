@@ -99,7 +99,6 @@ xargs -P $Parallel -a $EXEC_SHELL -r -I{} sh -c '{}'
 # 当該HTMLファイルが存在しない、または空ファイルである場合、取得し10秒のインターバルを空ける
 : > $EXEC_SHELL
 gawk -f AWKScripts/01_UPDATE/03_SubSystem/01_SubSystem_01.awk -v HTTP_Command=$HTTP_Command $DEUXLIST > $EXEC_SHELL
-echo $EXEC_SHELL
 RetCode=$?
 test $RetCode -ne 0 && exit 99;
 sh $EXEC_SHELL
